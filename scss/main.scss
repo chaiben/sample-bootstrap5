@@ -1,0 +1,64 @@
+.btn{
+    padding: 0.625rem 1.875rem !important;
+}
+
+.btn-secondary, .btn-secondary:hover{
+    color: white !important;
+}
+
+.ilustration-hero{
+    background-image: url(/public/imagenes/illustration-hero.svg);
+    background-repeat: no-repeat;
+    background-size: 34rem 24rem;
+    display: block;
+    height: 24rem;
+    position: relative;
+    width: 34rem;
+    z-index: 2;
+}
+.ilustration-hero-img {
+    display: none;
+}
+
+nav ul.navbar-nav {
+    font-size: 0.8125rem;
+    letter-spacing: 0.0625rem;
+}
+
+$font-family-sans-serif: Arial, Helvetica, sans-serif;
+$primary:   #5265E1;
+$secondary: #FA5959;
+
+$navbar-dark-toggler-border-color:  none;
+$navbar-dark-toggler-icon-bg:       url('/public/imagenes/icon-hamburger.svg');
+$navbar-light-toggler-border-color: none;
+$navbar-light-toggler-icon-bg:      url('/public/imagenes/icon-hamburger.svg');
+
+.container-image-compuesta{
+    position: relative;
+}
+.caja-azul-derecha {
+    background-color: $primary;
+    border-radius: 11rem 0 0 11rem;
+    display: block;
+    height: 18rem;
+    left: 9vw;
+    position: absolute;
+    top: 6rem;
+    width: 41vw;
+    z-index: 1;
+}
+
+@media (max-width: 992px) {
+    .container-image-compuesta,
+    .ilustration-hero,
+    .caja-azul-derecha {
+        display: none;
+    }
+    .ilustration-hero-img {
+        display: block;
+    }
+}
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";

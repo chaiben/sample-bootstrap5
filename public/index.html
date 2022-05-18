@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" type="image/x-icon" href="./imagenes/favicon-32x32.png">
+    <title>Sprint 2</title>
+</head>
+<body>
+    <main class="container d-flex flex-column gap-5 align-items-center">
+        <!-- Menu superior -->
+        <nav class="container navbar navbar-expand-lg navbar-light text-uppercase mb-5">
+            <div class="container-fluid align-items-center">
+                <a class="navbar-brand" href="#"><img src="./imagenes/logo-bookmark.svg" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item me-3"> 
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    </ul>
+                    <button class="btn btn-secondary text-uppercase btn-sm shadow" type="button">Login</button>
+                </div>
+            </div>
+        </nav>
+        <!-- Fin menu superior -->
+
+        <!-- Sección destacada -->
+        <section class="container row flex-row-reverse align-items-center">
+            <!-- Columna Derecha -->
+            <div class="col-12 col-lg-6">
+                <img src="./imagenes/ilustration-hero.png" class="ilustration-hero-img container-fluid mb-5" />
+                <div class="container-image-compuesta">
+                    <span class="ilustration-hero"></span>
+                    <span class="caja-azul-derecha"></span>
+                </div>
+            </div>
+            <!-- Columna Izquierda -->
+            <div class="col-12 col-lg-6 d-flex flex-column gap-3">
+                <h1>A Simple Bookmark Manager</h1>
+                <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                <div class="d-flex gap-3">
+                    <button class="btn btn-primary btn-sm shadow" type="button">Get it on Firefox</button>
+                    <button class="btn btn-light btn-sm shadow" type="button">Get it on Chrome</button>
+                </div>
+            </div>
+        </section>
+        <!-- Final de la sección destacada -->
+    </main>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
