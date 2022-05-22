@@ -6,7 +6,7 @@
   color: white !important;
 }
 
-.ilustration-hero {
+.illustration-hero {
   background-image: url(/public/imagenes/illustration-hero.svg);
   background-repeat: no-repeat;
   background-size: 34rem 24rem;
@@ -17,7 +17,19 @@
   z-index: 2;
 }
 
-.ilustration-hero-img {
+.illustration-features-tab-1 {
+  background-image: url(/public/imagenes/illustration-features-tab-1.svg);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: 26.5rem 18rem;
+  display: block;
+  height: 18rem;
+  position: relative;
+  z-index: 2;
+}
+
+.illustration-features-tab-1-img,
+.illustration-hero-img {
   display: none;
 }
 
@@ -42,13 +54,43 @@ nav ul.navbar-nav {
   z-index: 1;
 }
 
+.caja-azul-izquierda {
+  background-color: #5265E1;
+  border-radius: 0 11rem 11rem 0;
+  display: block;
+  height: 18rem;
+  right: 9vw;
+  position: absolute;
+  top: 6rem;
+  width: 41vw;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .nav-tabs .nav-link {
+    display: inline-block;
+  }
+  .nav-tabs {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    border-top: 1px solid #6c757d !important;
+  }
+}
+
 @media (max-width: 992px) {
+  .container {
+    text-align: center;
+  }
   .container-image-compuesta,
-  .ilustration-hero,
+  .illustration-features-tab-1,
+  .illustration-hero,
   .caja-azul-derecha {
     display: none;
   }
-  .ilustration-hero-img {
+  .illustration-features-tab-1-img,
+  .illustration-hero-img {
     display: block;
   }
 }
@@ -4408,7 +4450,7 @@ fieldset:disabled .btn {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #5265E1;
+  color: #6c757d;
   text-decoration: none;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
@@ -12011,3 +12053,41 @@ fieldset:disabled .btn {
     display: none !important;
   }
 }
+
+h1, .h1 {
+  font-weight: bold;
+}
+
+.nav-item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.nav-tabs {
+  border: none;
+  padding: 0;
+}
+
+.nav-tabs .nav-item {
+  border: none;
+  font-family: Helvetica, Arial , sans-serif;
+  font-size: 1rem;
+  min-width: 12.5rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.nav-tabs .nav-item {
+  border-bottom: 1px solid;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.nav-tabs .nav-link.active {
+  border-bottom: 3px solid #FA5959;
+}
+/*# sourceMappingURL=main.css.map */

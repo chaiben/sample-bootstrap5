@@ -9,7 +9,7 @@
     <title>Sprint 2</title>
 </head>
 <body>
-    <main class="container d-flex flex-column gap-5 align-items-center">
+    <main class="container d-flex flex-column gap-5 align-items-center mb-5">
         <!-- Menu superior -->
         <nav class="container navbar navbar-expand-lg navbar-light text-uppercase mb-5">
             <div class="container-fluid align-items-center">
@@ -39,23 +39,54 @@
         <section class="container row flex-row-reverse align-items-center">
             <!-- Columna Derecha -->
             <div class="col-12 col-lg-6">
-                <img src="./imagenes/ilustration-hero.png" class="ilustration-hero-img container-fluid mb-5" />
+                <img src="./imagenes/illustration-hero.png" class="illustration-hero-img container-fluid mb-5" />
                 <div class="container-image-compuesta">
-                    <span class="ilustration-hero"></span>
+                    <span class="illustration-hero"></span>
                     <span class="caja-azul-derecha"></span>
                 </div>
             </div>
             <!-- Columna Izquierda -->
-            <div class="col-12 col-lg-6 d-flex flex-column gap-3">
+            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center gap-3">
                 <h1>A Simple Bookmark Manager</h1>
                 <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
-                <div class="d-flex gap-3">
-                    <button class="btn btn-primary btn-sm shadow" type="button">Get it on Firefox</button>
-                    <button class="btn btn-light btn-sm shadow" type="button">Get it on Chrome</button>
+                <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                    <button class="btn btn-primary btn-sm shadow" type="button">Get it on Chrome</button>
+                    <button class="btn btn-light btn-sm shadow" type="button">Get it on Firefox</button>
                 </div>
             </div>
         </section>
         <!-- Final de la sección destacada -->
+        <!-- Sección de Features -->
+        <section class="container col-12 col-lg-6 text-center">
+            <h2 class="mb-4">Features</h2>
+            <div>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</div>
+        </section>        
+        <ul class="container col-12 col-lg-8 nav nav-tabs" id="myTab">
+            <li class="nav-item"><a href="#home" data-toggle="tab" class="nav-link active">Simple Bookmarking</a></li>
+            <li class="nav-item"><a href="#profile" data-toggle="tab" class="nav-link">Speedy Searching</a></li>
+            <li class="nav-item"><a href="#messages" data-toggle="tab" class="nav-link">Easy Sharing</a></li>
+        </ul>
+        <!-- Final de la sección de Features -->
+        <!-- Sección destacada2 -->
+        <section class="container row flex-row align-items-center">
+            <!-- Columna Izquierda -->
+            <div class="col-12 col-lg-6">
+                <img src="./imagenes/illustration-features-tab-1.png" class="illustration-features-tab-1-img container-fluid mb-5" />
+                <div class="container-image-compuesta">
+                    <span class="illustration-features-tab-1"></span>
+                    <span class="caja-azul-izquierda"></span>
+                </div>
+            </div>
+            <!-- Columna Derecha -->
+            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center gap-3">
+                <h1>Bookmark in one click</h1>
+                <p>Organize your bookmarks however you like. Our simple drag-drop interface gives you complete control over hoy you manage you favourite sites.</p>
+                <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                    <button class="btn btn-primary btn-sm shadow" type="button">More info</button>
+                </div>
+            </div>
+        </section>
+        <!-- Final de la sección destacada2 -->
     </main>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
