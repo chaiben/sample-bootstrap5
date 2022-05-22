@@ -5,6 +5,9 @@ $nav-link-color: #6c757d;
 $border-color: rgba(0, 0, 0, 0.125);
 
 $accordion-icon-color: $primary;
+$accordion-icon-active-color: $secondary;
+$accordion-button-active-bg: white;
+$accordion-button-active-color: black;
 $input-padding-x: 1.5rem;
 $input-padding-y: 0.625rem;
 $input-font-weight: 'lighter';
@@ -20,14 +23,6 @@ $navbar-light-toggler-icon-bg:      url('/public/imagenes/icon-hamburger.svg');
 
 footer{
     margin-top: 7rem;
-}
-.btn{
-    padding: 0.625rem 1.875rem !important;
-}
-
-.btn-secondary, .btn-secondary:hover{
-    color: white !important;
-
 }
 
 .illustration-hero{
@@ -155,6 +150,31 @@ $elements: 3;
 h1, h2, h5{
     font-weight: bold;
 }
+.btn{
+    padding: 0.625rem 1.875rem !important;
+}
+
+.btn-secondary{
+    color: white !important;
+}
+.btn-secondary:hover{
+    background-color: white !important;
+    border: 2px solid $secondary !important;
+    color: $secondary !important;
+    border-radius: 5px !important;
+}
+.btn-primary:hover{
+    background-color: white !important;
+    border: 2px solid $primary !important;
+    color: $primary !important;
+    border-radius: 5px !important;
+}
+.btn-light:hover{
+    background-color: white !important;
+    border: 2px solid $dark !important;
+    // color: $ligth !important;
+    border-radius: 5px !important;
+}
 footer button{
     width: 100%;
 }
@@ -216,4 +236,28 @@ footer section .destacado{
 }
 .nav-tabs .nav-link.active{
     border-bottom: 3px solid $secondary;
+}
+.nav-link:hover{
+    color: $secondary !important;
+}
+.icon-facebook{
+    background-image: url(/public/imagenes/icon-facebook.svg);
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+}
+.icon-twitter{
+    background-image: url(/public/imagenes/icon-twitter.svg);
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+}
+.icon-facebook:hover {
+    background-image: url(/public/imagenes/icon-facebook-red.svg);
+}
+.icon-twitter:hover {
+    background-image: url(/public/imagenes/icon-twitter-red.svg);
+}
+.accordion-button:hover{
+    color: $secondary !important;
 }
