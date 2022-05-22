@@ -73,7 +73,29 @@ $navbar-light-toggler-icon-bg:      url('/public/imagenes/icon-hamburger.svg');
     width: 41vw;
     z-index: 1;
 }
-
+$elements: 3;
+@mixin card-desplazamiento {
+    @for $i from 1 through $elements {
+      &:nth-child(#{$i}) {
+        margin-top: #{$i * 1}rem;
+        margin-bottom: #{($elements - $i) * 1}rem;
+      }
+    }
+}
+@mixin card-desplazamiento-0 {
+    @for $i from 1 through $elements {
+      &:nth-child(#{$i}) {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+}
+.card{
+    @include card-desplazamiento();
+} 
+.cards{
+    gap: 1.5rem;
+}
 @media (max-width: 767px) {
     .nav-tabs .nav-link{
         display: inline-block;
@@ -85,6 +107,12 @@ $navbar-light-toggler-icon-bg:      url('/public/imagenes/icon-hamburger.svg');
 }
 
 @media (max-width: 992px) {
+    .card{
+        @include card-desplazamiento-0();
+    } 
+    .cards{
+        flex-direction: column;
+    }
     .container{
         text-align: center;
     }
@@ -103,10 +131,26 @@ $navbar-light-toggler-icon-bg:      url('/public/imagenes/icon-hamburger.svg');
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-h1{
+h1, h5{
     font-weight: bold;
 }
-
+.card{
+    text-align: center;
+    width: 18rem;
+}
+.card-botton{
+    padding: 1.5rem 0;
+    /* Dots */
+    background-image: linear-gradient(to right, $card-border-color 10%, rgba(255,255,255,0) 0%);
+    background-position: top;
+    background-size: 20px 2px;
+    background-repeat: repeat-x;
+}
+.card-img-top{
+    width: 65%;
+    margin: auto;
+    padding: 2.5rem 2.5rem 1rem 2.5rem;
+}
 .nav-item{
     flex-grow: 1;
 }

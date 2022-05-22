@@ -66,6 +66,25 @@ nav ul.navbar-nav {
   z-index: 1;
 }
 
+.card:nth-child(1) {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card:nth-child(2) {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card:nth-child(3) {
+  margin-top: 3rem;
+  margin-bottom: 0rem;
+}
+
+.cards {
+  gap: 1.5rem;
+}
+
 @media (max-width: 767px) {
   .nav-tabs .nav-link {
     display: inline-block;
@@ -80,6 +99,24 @@ nav ul.navbar-nav {
 }
 
 @media (max-width: 992px) {
+  .card:nth-child(1) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .card:nth-child(2) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .card:nth-child(3) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .container {
     text-align: center;
   }
@@ -12054,8 +12091,29 @@ fieldset:disabled .btn {
   }
 }
 
-h1, .h1 {
+h1, .h1, h5, .h5 {
   font-weight: bold;
+}
+
+.card {
+  text-align: center;
+  width: 18rem;
+}
+
+.card-botton {
+  padding: 1.5rem 0;
+  /* Dots */
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, rgba(0, 0, 0, 0.125)), color-stop(0%, rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.125) 10%, rgba(255, 255, 255, 0) 0%);
+  background-position: top;
+  background-size: 20px 2px;
+  background-repeat: repeat-x;
+}
+
+.card-img-top {
+  width: 65%;
+  margin: auto;
+  padding: 2.5rem 2.5rem 1rem 2.5rem;
 }
 
 .nav-item {
