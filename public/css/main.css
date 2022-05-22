@@ -67,17 +67,17 @@ nav ul.navbar-nav {
 }
 
 .card:nth-child(1) {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .card:nth-child(2) {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .card:nth-child(3) {
-  margin-top: 3rem;
+  margin-top: 4.5rem;
   margin-bottom: 0rem;
 }
 
@@ -94,7 +94,7 @@ nav ul.navbar-nav {
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
-    border-top: 1px solid #6c757d !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.125) !important;
   }
 }
 
@@ -2161,7 +2161,7 @@ progress {
   margin-bottom: 1rem;
   color: #212529;
   vertical-align: top;
-  border-color: #dee2e6;
+  border-color: rgba(0, 0, 0, 0.125);
 }
 
 .table > :not(caption) > * > * {
@@ -5465,7 +5465,7 @@ fieldset:disabled .btn {
   height: 1.25rem;
   margin-left: auto;
   content: "";
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%235265E1'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-size: 1.25rem;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
@@ -6497,7 +6497,7 @@ fieldset:disabled .btn {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1rem 1rem;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
 }
@@ -6535,7 +6535,7 @@ fieldset:disabled .btn {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding: 0.75rem;
-  border-top: 1px solid #dee2e6;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
   border-bottom-right-radius: calc(0.3rem - 1px);
   border-bottom-left-radius: calc(0.3rem - 1px);
 }
@@ -7950,7 +7950,7 @@ fieldset:disabled .btn {
 }
 
 .border {
-  border: 1px solid #dee2e6 !important;
+  border: 1px solid rgba(0, 0, 0, 0.125) !important;
 }
 
 .border-0 {
@@ -7958,7 +7958,7 @@ fieldset:disabled .btn {
 }
 
 .border-top {
-  border-top: 1px solid #dee2e6 !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.125) !important;
 }
 
 .border-top-0 {
@@ -7966,7 +7966,7 @@ fieldset:disabled .btn {
 }
 
 .border-end {
-  border-right: 1px solid #dee2e6 !important;
+  border-right: 1px solid rgba(0, 0, 0, 0.125) !important;
 }
 
 .border-end-0 {
@@ -7974,7 +7974,7 @@ fieldset:disabled .btn {
 }
 
 .border-bottom {
-  border-bottom: 1px solid #dee2e6 !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125) !important;
 }
 
 .border-bottom-0 {
@@ -7982,7 +7982,7 @@ fieldset:disabled .btn {
 }
 
 .border-start {
-  border-left: 1px solid #dee2e6 !important;
+  border-left: 1px solid rgba(0, 0, 0, 0.125) !important;
 }
 
 .border-start-0 {
@@ -12093,6 +12093,14 @@ fieldset:disabled .btn {
 
 h1, .h1, h5, .h5 {
   font-weight: bold;
+}
+
+.accordion-item:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.125) !important;
+}
+
+.accordion-item:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125) !important;
 }
 
 .card {

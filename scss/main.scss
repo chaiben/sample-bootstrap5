@@ -41,8 +41,9 @@ $font-family-sans-serif: Arial, Helvetica, sans-serif;
 $primary:   #5265E1;
 $secondary: #FA5959;
 $nav-link-color: #6c757d;
+$border-color: rgba(0, 0, 0, 0.125);
 
-
+$accordion-icon-color: $primary;
 $navbar-dark-toggler-border-color:  none;
 $navbar-dark-toggler-icon-bg:       url('/public/imagenes/icon-hamburger.svg');
 $navbar-light-toggler-border-color: none;
@@ -77,8 +78,8 @@ $elements: 3;
 @mixin card-desplazamiento {
     @for $i from 1 through $elements {
       &:nth-child(#{$i}) {
-        margin-top: #{$i * 1}rem;
-        margin-bottom: #{($elements - $i) * 1}rem;
+        margin-top: #{$i * 1.5}rem;
+        margin-bottom: #{($elements - $i) * 1.5}rem;
       }
     }
 }
@@ -102,7 +103,7 @@ $elements: 3;
     }
     .nav-tabs{
         flex-direction: column !important;
-        border-top: 1px solid rgb(108, 117, 125) !important;
+        border-top: 1px solid $border-color !important;
     }
 }
 
@@ -133,6 +134,10 @@ $elements: 3;
 
 h1, h5{
     font-weight: bold;
+}
+.accordion-item {
+    &:first-child { border-top: 1px solid $border-color !important;}
+    &:last-child { border-bottom: 1px solid $border-color !important;}
 }
 .card{
     text-align: center;
