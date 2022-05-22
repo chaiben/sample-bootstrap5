@@ -1,3 +1,26 @@
+$font-family-sans-serif: Arial, Helvetica, sans-serif;
+$primary:   #5265E1;
+$secondary: #FA5959;
+$nav-link-color: #6c757d;
+$border-color: rgba(0, 0, 0, 0.125);
+
+$accordion-icon-color: $primary;
+$input-padding-x: 1.5rem;
+$input-padding-y: 0.625rem;
+$input-font-weight: 'lighter';
+$navbar-dark-toggler-border-color:  none;
+$navbar-dark-toggler-icon-bg:       url('/public/imagenes/icon-hamburger.svg');
+$navbar-light-toggler-border-color: none;
+$navbar-light-toggler-icon-bg:      url('/public/imagenes/icon-hamburger.svg');
+
+@font-face {
+    font-family: 'Montserrat';
+    src:  url('/public/fonts/Montserrat-VariableFont_wght.woff2') format('woff2');
+}
+
+footer{
+    margin-top: 7rem;
+}
 .btn{
     padding: 0.625rem 1.875rem !important;
 }
@@ -37,18 +60,6 @@ nav ul.navbar-nav {
     letter-spacing: 0.0625rem;
 }
 
-$font-family-sans-serif: Arial, Helvetica, sans-serif;
-$primary:   #5265E1;
-$secondary: #FA5959;
-$nav-link-color: #6c757d;
-$border-color: rgba(0, 0, 0, 0.125);
-
-$accordion-icon-color: $primary;
-$navbar-dark-toggler-border-color:  none;
-$navbar-dark-toggler-icon-bg:       url('/public/imagenes/icon-hamburger.svg');
-$navbar-light-toggler-border-color: none;
-$navbar-light-toggler-icon-bg:      url('/public/imagenes/icon-hamburger.svg');
-
 .container-image-compuesta{
     position: relative;
 }
@@ -73,6 +84,12 @@ $navbar-light-toggler-icon-bg:      url('/public/imagenes/icon-hamburger.svg');
     top: 6rem;
     width: 41vw;
     z-index: 1;
+}
+.destacado{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 6px;
 }
 $elements: 3;
 @mixin card-desplazamiento {
@@ -117,6 +134,9 @@ $elements: 3;
     .container{
         text-align: center;
     }
+    .navbar-collapse{
+        text-align: left;
+    }
     .container-image-compuesta,
     .illustration-features-tab-1,
     .illustration-hero,
@@ -132,8 +152,21 @@ $elements: 3;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-h1, h5{
+h1, h2, h5{
     font-weight: bold;
+}
+footer button{
+    width: 100%;
+}
+footer section .destacado{
+    font-family: Helvetica, Arial , sans-serif;
+    font-size: 0.75rem;
+}
+.footer-nav{
+    background-color: #232948;
+}
+.footer-nav .navbar-nav .nav-link{
+    color: white;
 }
 .accordion-item {
     &:first-child { border-top: 1px solid $border-color !important;}
@@ -156,6 +189,9 @@ h1, h5{
     margin: auto;
     padding: 2.5rem 2.5rem 1rem 2.5rem;
 }
+.invalid-feedback{
+    color: $secondary;
+}
 .nav-item{
     flex-grow: 1;
 }
@@ -172,7 +208,7 @@ h1, h5{
     text-align: center;
 }
 .nav-tabs .nav-item{
-    border-bottom: 1px solid;
+    border-bottom: 1px solid $border-color;
 }
 .nav-tabs .nav-link{
     border: none;
